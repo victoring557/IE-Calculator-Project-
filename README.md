@@ -10,4 +10,4 @@ From this folder:
 python src/calculator.py
 ```
 
-Type the operation number, then the numbers. 7 quits.
+Type the operation number, then the numbers.
