@@ -1,15 +1,13 @@
 # Calculator
 
-Add, subtract, multiply, and divide. Also percentage change and compound growth.
-
-## Setup
+Add, subtract, multiply, divide, percent change, and growth.
 
 Python 3.10 or newer. No extra packages.
 
-## Run
+From this folder:
 
-Open the notebook in this folder and run the cells from the top.
+```
+python src/calculator.py
+```
 
-The functions are in src/calculator.py.
-
-Example: add(5, 8) returns 13.
+Type the operation number, then the numbers. 7 quits.

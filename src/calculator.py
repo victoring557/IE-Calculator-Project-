@@ -21,18 +21,18 @@ def divide(a: float, b: float) -> float:
 
 
 def percentage_change(new: float, old: float) -> float:
-    """Return (new - old) / old. old cannot be 0."""
+    """Return (new - old) / old."""
     if old == 0:
         raise ValueError("Cannot divide by zero.")
     return (new - old) / old
 
 
 def compound_growth(start: float, rate: float, periods: float) -> float:
-    """Return start after compounding. rate is a fraction, so 0.05 means 5%."""
+    """Return start * (1 + rate) ** periods. 0.05 means 5%."""
     return start * (1 + rate) ** periods
 
 
-def main() -> None:
+def main():
     while True:
         choice = input("1 add, 2 subtract, 3 multiply, 4 divide, 5 percent, 6 growth, 7 quit: ")
         if choice == "7":
