@@ -4,31 +4,31 @@ def add(a: float, b: float) -> float:
 
 
 def subtract(a: float, b: float) -> float:
-    """Return a minus b."""
+    """subtracts the second number from the first"""
     return a - b
 
 
 def multiply(a: float, b: float) -> float:
-    """Return a times b."""
+    """multiplies both numbers"""
     return a * b
 
 
 def divide(a: float, b: float) -> float:
-    """Return a divided by b."""
+    """divides a by b. errors if b is 0"""
     if b == 0:
         raise ValueError("Cannot divide by zero.")
     return a / b
 
 
 def percentage_change(new: float, old: float) -> float:
-    """Return (new - old) / old."""
+    """how much it changed from old to new"""
     if old == 0:
         raise ValueError("Cannot divide by zero.")
     return (new - old) / old
 
 
 def compound_growth(start: float, rate: float, periods: float) -> float:
-    """Return start * (1 + rate) ** periods. 0.05 means 5%."""
+    """grows the starting amount. 0.05 means 5 percent"""
     return start * (1 + rate) ** periods
 
 
